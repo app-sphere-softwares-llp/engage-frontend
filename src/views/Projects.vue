@@ -1,0 +1,5 @@
+<template>
+    <div id="projects">
+        <h1>PROJECTS</h1>
+    </div>
+</template>
