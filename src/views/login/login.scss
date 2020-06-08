@@ -1,0 +1,121 @@
+$loginHeight : calc(100vh - 0px);
+
+#login-page, #signup-page {
+  min-height: 100vh;
+  height: $loginHeight;
+
+  .form {
+    padding-top: 100px;
+    width: 290px;
+    margin:auto;
+    height: $loginHeight;
+  }
+
+  .logo-container {
+    padding-bottom: 60px;
+  }
+
+  .login-wall {
+    background: url('../../assets/images/others/login_wall.svg') no-repeat bottom center;
+    background-size: contain;
+    height: $loginHeight;
+
+    .content {
+      padding: 90px 7% 0px 7%;
+    }
+
+  }
+
+  .signup-login-link {
+    position:absolute;
+    bottom: 10px;
+    margin-left: 10px;
+    text-align:center;
+    font-weight: 500;
+  }
+
+
+  .ant-input {
+    height: 40px;
+  }
+
+  .ant-form-item-label label {
+    color: #00255b;
+    font-weight: 500;
+    text-transform: initial;
+    font-size: 13px;
+    line-height: 13px;
+    margin-bottom: 5px!important;
+  }
+
+  .btn-google {
+    height: 43px;
+    box-shadow: 0px 0px 2px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #ffffff;
+  }
+
+  .border-sep {
+    height: 1px;
+    background: #DEDFE2;
+  }
+
+  .or-line {
+    div {
+      background: #D9D9D9;
+      height: 20px;
+      border-top: 11px solid #fff;
+      border-bottom: 8px solid #fff;
+      border-left: 25px solid #fff;
+    }
+
+    span {
+      color: #808080;
+      position: absolute;
+      left: 0px;
+      top:-6px;
+      padding-right: 5px;
+    }
+  }
+
+  .login-form-button {
+    border-radius: 4px !important;
+    padding: 11px !important;
+    width: 100%;
+    span {
+      font-weight: 500;
+      text-shadow: none;
+    }
+  }
+
+  .list-unstyled {
+    .media {
+      margin-bottom: 30px;
+
+      img {
+        height: 30px;
+        width: 40px;
+      }
+
+      .media-body {
+        font-size: 0.8125rem;
+        color: #333333;
+      }
+
+      h5 {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #333333;
+        line-height: 1rem;
+        padding-bottom: 4px;
+      }
+    }
+  }
+
+  .login-gradient {
+    height: 100%;
+    width: 100%;
+    background: transparent linear-gradient(180deg, #ffffff 0%, #F5F5F5 100%) 0% 0% no-repeat padding-box;
+  }
+}

@@ -6,6 +6,7 @@ import VueI18n from "vue-i18n";
 //ant design ui framework
 import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
+import '../src/scss/app.scss';
 
 
 // use i18n

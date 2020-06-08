@@ -1,0 +1,26 @@
+body {
+  background-color: #ffffff;
+}
+.ant-form-item {
+  margin-bottom: 15px!important;
+
+  .ant-input {
+    height: 34px;
+  }
+
+  .ant-form-item-label {
+    line-height: 18px !important;
+    font-weight: 500;
+  }
+
+  .ant-form-item-label > label::after {
+    content: '';
+  }
+   .ant-form-item-control {
+     line-height: 34px;
+   }
+ }
+
+.text-right {
+  text-align: right;
+}
