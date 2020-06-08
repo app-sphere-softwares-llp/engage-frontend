@@ -1,15 +1,59 @@
-#login-page {
-  min-height: 100vh;
-  padding:70px 90px 0px 90px;
+$loginHeight : calc(100vh - 0px);
 
-  .form-padding {
-    padding: 0px 70px;
+#login-page, #signup-page {
+  min-height: 100vh;
+  height: $loginHeight;
+
+  .form {
+    padding-top: 100px;
+    width: 290px;
+    margin:auto;
+    height: $loginHeight;
+  }
+
+  .logo-container {
+    padding-bottom: 60px;
   }
 
   .login-wall {
     background: url('../../assets/images/others/login_wall.svg') no-repeat bottom center;
     background-size: contain;
-    height: calc(100vh - 70px);
+    height: $loginHeight;
+
+    .content {
+      padding: 90px 7% 0px 7%;
+    }
+
+  }
+
+  .signup-login-link {
+    position:absolute;
+    bottom: 10px;
+    margin-left: 10px;
+    text-align:center;
+    font-weight: 500;
+  }
+
+
+  .ant-input {
+    height: 40px;
+  }
+
+  .ant-form-item-label label {
+    color: #00255b;
+    font-weight: 500;
+    text-transform: initial;
+    font-size: 13px;
+    line-height: 13px;
+    margin-bottom: 5px!important;
+  }
+
+  .btn-google {
+    height: 43px;
+    box-shadow: 0px 0px 2px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #ffffff;
   }
 
   .border-sep {
@@ -30,6 +74,7 @@
       color: #808080;
       position: absolute;
       left: 0px;
+      top:-6px;
       padding-right: 5px;
     }
   }
@@ -37,6 +82,11 @@
   .login-form-button {
     border-radius: 4px !important;
     padding: 11px !important;
+    width: 100%;
+    span {
+      font-weight: 500;
+      text-shadow: none;
+    }
   }
 
   .list-unstyled {

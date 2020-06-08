@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Login from "../views/login/Login.vue";
-import Signup from "../views/Signup.vue";
+import Signup from "../views/signup/Signup.vue";
 import Home from "../views/Home.vue";
 import Projects from "../views/Projects.vue";
 import Dashboard from "../views/Dashboard.vue";
