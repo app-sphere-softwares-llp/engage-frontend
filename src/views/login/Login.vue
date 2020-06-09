@@ -47,7 +47,7 @@
                   <a-icon
                           slot="prefix"
                           type="lock"
-                          style="color: rgba(0,0,0,.25)" />
+                          style="color: rgba(0,0,0,.25)" ></a-icon>
                 </a-input>
               </a-form-model-item>
 

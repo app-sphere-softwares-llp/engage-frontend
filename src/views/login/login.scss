@@ -5,9 +5,9 @@ $loginHeight : calc(100vh - 0px);
   height: $loginHeight;
 
   .form {
-    padding-top: 100px;
+    padding-top: 50px;
+    margin-left:70px;
     width: 290px;
-    margin:auto;
     height: $loginHeight;
   }
 
@@ -117,5 +117,12 @@ $loginHeight : calc(100vh - 0px);
     height: 100%;
     width: 100%;
     background: transparent linear-gradient(180deg, #ffffff 0%, #F5F5F5 100%) 0% 0% no-repeat padding-box;
+  }
+
+  @media screen and (max-width: 768px){
+    .form {
+      margin: auto;
+      padding-left:20px;
+    }
   }
 }
