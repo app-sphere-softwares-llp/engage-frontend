@@ -1,3 +1,9 @@
+<!-- CSS content -->
+<style lang="scss">
+    @import "Header.scss";
+</style>
+
+<!-- HTML content -->
 <template>
 
     <div>
@@ -26,6 +32,7 @@
 
 </template>
 
+<!-- JS content -->
 <script>
     export default {
         name: "Header",
@@ -36,20 +43,3 @@
         }
     };
 </script>
-
-<style>
-
-    .nav-wrap {
-        flex: 1;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .nav-right {
-        list-style-type: none;
-        padding-left: 0px;
-        margin-bottom: 0px;
-        align-items: center;
-        display: flex;
-    }
-</style>
