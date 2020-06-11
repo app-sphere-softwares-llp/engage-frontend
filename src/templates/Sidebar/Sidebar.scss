@@ -1,0 +1,125 @@
+@import "../../scss/variables";
+
+.open-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+
+  /* main menu */
+  .main-menu {
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    background: $brand-primary;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    .logo img {
+      width: 100%!important;
+    }
+
+    .menu-profile {
+      position: absolute;
+      bottom:22px;
+      width: $main-menu-width;
+      text-align: center;
+
+      .avatar-icon {
+        background: $tone-light-purple-light;
+        height: 22px;
+        width: 22px;
+        margin: auto;
+        border-radius: 50%;
+      }
+
+    }
+
+  }
+
+  /* sub menu */
+  .sub-menu {
+    width: 230px;
+    background: #ffffff;
+    height: 100%;
+    box-shadow: 0px 1px 20px #0000000D;
+    border-radius: 0px 10px 10px 0px;
+    padding: 16px 33px 16px 16px;
+
+    .global-search {
+      width: 100%;
+
+      .ant-input {
+        border: 1px solid $input-border-color;
+        border-radius: 6px;
+      }
+
+      .ant-select-dropdown {
+        top:55px!important;
+      }
+
+    }
+    .ant-input-affix-wrapper .ant-input:not(:first-child) {
+      padding-left: 35px;
+    }
+    .global-search-item {
+      display: flex;
+    }
+
+    .global-search-item-desc {
+      flex: auto;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    .global-search-item-count {
+      flex: none;
+    }
+
+    .selected-menu-item-name {
+      opacity: 0.6;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      margin-top: 40px;
+      font-weight: bold;
+    }
+    .ant-avatar {
+      width: 34px;
+      height: 34px;
+      line-height: 34px;
+      border-radius: 6px;
+    }
+    .ant-list-item {
+      cursor: pointer;
+      align-items: center;
+      display: flex;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 0px solid #edf2f9;
+    }
+    .ant-list-item.selected {
+      a {
+        color: $blue;
+      }
+    }
+
+    .ant-list-item-meta-avatar {
+      margin-right: 0.75rem;
+    }
+
+    .ant-list-item-meta-title {
+      margin-bottom: 0px;
+      font-size: 0.8rem;
+      line-height: 17px;
+      font-weight: bold;
+    }
+    .ant-list-item-meta-description {
+      font-size: 0.75rem;
+    }
+
+  }
+
+
+}
