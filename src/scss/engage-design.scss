@@ -71,6 +71,7 @@ body {
   .anticon {
     vertical-align: 0rem!important;
     line-height: 34px!important;
+    opacity: 0.5;
   }
 
   .ant-menu-dark .ant-menu-item > a, .ant-menu-dark .ant-menu-item-group-title > a {
@@ -78,6 +79,11 @@ body {
   }
   .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
     background: #ffffff1a;
+    .anticon {
+      vertical-align: 0rem!important;
+      line-height: 34px!important;
+      opacity: 1;
+    }
   }
 
   #components-layout-demo-custom-trigger .logo {

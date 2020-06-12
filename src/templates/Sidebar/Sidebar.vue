@@ -15,7 +15,7 @@
 
             <a-menu theme="dark" mode="inline" :default-selected-keys="['activities']">
 
-                <a-menu-item key="activities" @click="selectedMenu('dashboard', 'Activities')">
+                <a-menu-item key="activities" @click="selectedMenu('activities', 'Activities')">
                     <router-link to="/activities">
                         <i class="anticon anticon-user"><img src="../../assets/images/icons/menu_activities.svg" /></i>
                         <span> Activities</span>
@@ -24,7 +24,7 @@
                 <a-menu-item key="reports" @click="selectedMenu('reports', 'Reports')">
                     <router-link to="/projects">
                         <i class="anticon anticon-user"><img src="../../assets/images/icons/menu_reports.svg" /></i>
-                        <span> Projects</span>
+                        <span> Reports</span>
                     </router-link>
                 </a-menu-item>
 
@@ -88,9 +88,23 @@
 
 
             <!-- menu item selected -->
-            <h3 class="selected-menu-item-name">{{selectedMenuItemName ? selectedMenuItemName : 'Dashboard' }}</h3>
+            <h3 class="selected-menu-item-name">{{selectedMenuItemName ? selectedMenuItemName : 'Activities' }}</h3>
 
-            <!-- sub menu items -->
+            <!-- sub menu items for activities -->
+            <template v-if="selectedMenuItemRoute==='activities'">
+                <a-list item-layout="horizontal" :data-source="recentActivities">
+                    <a-list-item slot="renderItem" slot-scope="item, index" :class="index===0 ? 'selected' : ''">
+                        <a-list-item-meta :description="item.description" >
+                            <a slot="title" href="javascript:void(0);">{{ item.title }}</a>
+                            <a-avatar
+                                    slot="avatar"
+                                    src="../../assets/images/icons/folder.svg" />
+                        </a-list-item-meta>
+                    </a-list-item>
+                </a-list>
+            </template>
+
+            <!-- sub menu items for projects -->
             <template v-if="selectedMenuItemRoute==='projects'">
                 <a-list item-layout="horizontal" :data-source="recentProjects">
                     <a-list-item slot="renderItem" slot-scope="item, index" :class="index===0 ? 'selected' : ''">
@@ -120,8 +134,8 @@
         data() {
             return {
                 dataSource: [],
-                selectedMenuItemName: 'Dashboard',
-                selectedMenuItemRoute: 'dashboard',
+                selectedMenuItemName: 'Activities',
+                selectedMenuItemRoute: 'activities',
                 menus: [
                     {
                         label:'Activities',
@@ -137,6 +151,28 @@
                         label:'Activities',
                         route:'activities',
                         icon:'../../assets/images/icons/menu_projects.svg'
+                    }
+                ],
+                recentActivities : [
+                    {
+                        title: 'Assign.Work',
+                        description: 'Last worked 1 days ago'
+                    },
+                    {
+                        title: 'Engage',
+                        description: 'Last worked 2 days ago'
+                    },
+                    {
+                        title: 'Linese',
+                        description: 'Last worked 2 days ago'
+                    },
+                    {
+                        title: 'FLUIT',
+                        description: 'Last worked 3 days ago'
+                    },
+                    {
+                        title: 'Anandam',
+                        description: 'Last worked 3 days ago'
                     }
                 ],
                 recentProjects : [
