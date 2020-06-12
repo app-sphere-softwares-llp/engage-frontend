@@ -15,21 +15,20 @@
 
             <a-menu theme="dark" mode="inline" :default-selected-keys="['activities']">
 
-                <a-menu-item key="1" @click="selectedMenu('dashboard', 'Activities')">
+                <a-menu-item key="activities" @click="selectedMenu('dashboard', 'Activities')">
                     <router-link to="/activities">
                         <i class="anticon anticon-user"><img src="../../assets/images/icons/menu_activities.svg" /></i>
-                        <a-icon type="user" />
                         <span> Activities</span>
                     </router-link>
                 </a-menu-item>
-                <a-menu-item key="2" @click="selectedMenu('reports', 'Reports')">
+                <a-menu-item key="reports" @click="selectedMenu('reports', 'Reports')">
                     <router-link to="/projects">
                         <i class="anticon anticon-user"><img src="../../assets/images/icons/menu_reports.svg" /></i>
                         <span> Projects</span>
                     </router-link>
                 </a-menu-item>
 
-                <a-menu-item key="3" @click="selectedMenu('projects', 'Projects')">
+                <a-menu-item key="projects" @click="selectedMenu('projects', 'Projects')">
                     <router-link to="/projects">
                         <i class="anticon anticon-user"><img src="../../assets/images/icons/menu_projects.svg" /></i>
                         <span> Projects</span>
