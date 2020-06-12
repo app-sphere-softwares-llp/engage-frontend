@@ -17,14 +17,14 @@
 
                 <a-menu-item key="1" @click="selectedMenu('dashboard', 'Activities')">
                     <router-link to="/activities">
-<!--                        <img src="../../assets/images/icons/menu_activities.svg" />-->
+                        <i class="anticon anticon-user"><img src="../../assets/images/icons/menu_activities.svg" /></i>
                         <a-icon type="user" />
                         <span> Activities</span>
                     </router-link>
                 </a-menu-item>
                 <a-menu-item key="2" @click="selectedMenu('reports', 'Reports')">
                     <router-link to="/projects">
-                        <i><img src="../../assets/images/icons/menu_reports.svg" /></i>
+                        <i class="anticon anticon-user"><img src="../../assets/images/icons/menu_reports.svg" /></i>
                         <span> Projects</span>
                     </router-link>
                 </a-menu-item>
