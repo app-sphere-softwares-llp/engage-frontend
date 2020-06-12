@@ -5,6 +5,7 @@ import Signup from "../views/signup/Signup.vue";
 import Home from "../views/Home.vue";
 import Projects from "../views/Projects.vue";
 import Dashboard from "../views/Dashboard.vue";
+import Reports from "../views/Reports.vue";
 
 Vue.use(VueRouter);
 
@@ -34,10 +35,15 @@ const routes: Array<RouteConfig> = [
     },
     children:[
       {
-        path: "/dashboard",
-        name: "dashboard",
+        path: "/activities",
+        name: "activities",
         component: Dashboard
       },
+        {
+        path: "/reports",
+        name: "reports",
+        component: Reports
+        },
       {
         path: "/projects",
         name: "projects",

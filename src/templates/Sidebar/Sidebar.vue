@@ -13,20 +13,36 @@
                 <img src="../../assets/images/logo/logo-fold.svg">
             </div>
 
-            <a-menu theme="dark" mode="inline" :default-selected-keys="['1']">
+            <a-menu theme="dark" mode="inline" :default-selected-keys="['activities']">
 
-                <a-menu-item key="1" @click="selectedMenu('dashboard', 'Dashboard')">
-                    <router-link to="/dashboard">
+                <a-menu-item key="1" @click="selectedMenu('dashboard', 'Activities')">
+                    <router-link to="/activities">
+<!--                        <img src="../../assets/images/icons/menu_activities.svg" />-->
                         <a-icon type="user" />
-                        <span>Dashboard</span>
+                        <span> Activities</span>
                     </router-link>
                 </a-menu-item>
-                <a-menu-item key="2" @click="selectedMenu('projects', 'Projects')">
+                <a-menu-item key="2" @click="selectedMenu('reports', 'Reports')">
                     <router-link to="/projects">
-                        <a-icon type="video-camera" />
-                        <span>Projects</span>
+                        <i><img src="../../assets/images/icons/menu_reports.svg" /></i>
+                        <span> Projects</span>
                     </router-link>
                 </a-menu-item>
+
+                <a-menu-item key="3" @click="selectedMenu('projects', 'Projects')">
+                    <router-link to="/projects">
+                        <i class="anticon anticon-user"><img src="../../assets/images/icons/menu_projects.svg" /></i>
+                        <span> Projects</span>
+                    </router-link>
+                </a-menu-item>
+
+<!--                <a-menu-item v-for="item in menus" :key="item.route" @click="selectedMenu(item.route, item.label)">-->
+<!--                    <router-link :to="'/'+item.route">-->
+<!--                        <span><img src="../../assets/images/icons/menu_activities.svg"></span>-->
+<!--                        <span class="">{{item.label}}</span>-->
+<!--                    </router-link>-->
+<!--                </a-menu-item>-->
+
             </a-menu>
 
             <!-- profile option -->
@@ -107,6 +123,23 @@
                 dataSource: [],
                 selectedMenuItemName: 'Dashboard',
                 selectedMenuItemRoute: 'dashboard',
+                menus: [
+                    {
+                        label:'Activities',
+                        route:'activities',
+                        icon:'../../assets/images/icons/menu_activities.svg'
+                    },
+                    {
+                        label:'Reports',
+                        route:'reports',
+                        icon:'../../assets/images/icons/menu_projects.svg'
+                    },
+                    {
+                        label:'Activities',
+                        route:'activities',
+                        icon:'../../assets/images/icons/menu_projects.svg'
+                    }
+                ],
                 recentProjects : [
                     {
                         title: 'Assign.Work',
