@@ -1,7 +1,13 @@
+<!------------------------------->
+<!------ Activities Page -------->
+<!------------------------------->
+<!-- CSS content -->
 <style lang="scss">
-@import "./login";
+@import "Login";
 </style>
 
+
+<!-- HTML content -->
 <template>
   <section id="login-page">
     <a-row type="flex" justify="space-between" align="start">
@@ -145,6 +151,8 @@
     </a-row>
   </section>
 </template>
+
+<!-- JS content -->
 <script>
 export default {
   data() {

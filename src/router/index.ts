@@ -1,11 +1,11 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
-import Login from "../views/login/Login.vue";
-import Signup from "../views/signup/Signup.vue";
-import Home from "../views/Home.vue";
-import Projects from "../views/Projects.vue";
-import Dashboard from "../views/Dashboard.vue";
-import Reports from "../views/Reports.vue";
+import Login from "../components/Login/Login.vue";
+import Signup from "../components/Signup/Signup.vue";
+import Home from "../components/Home/Home.vue";
+import Projects from "../components/Projects/Projects.vue";
+import Activities from "../components/Activities/Activities.vue";
+import Reports from "../components/Reports/Reports.vue";
 
 Vue.use(VueRouter);
 
@@ -37,7 +37,7 @@ const routes: Array<RouteConfig> = [
       {
         path: "/activities",
         name: "activities",
-        component: Dashboard
+        component: Activities
       },
         {
         path: "/reports",

@@ -125,3 +125,13 @@ body {
 .text-right {
   text-align: right;
 }
+
+
+/* tooltip */
+.ant-tooltip-placement-top .ant-tooltip-arrow, .ant-tooltip-placement-topLeft .ant-tooltip-arrow, .ant-tooltip-placement-topRight .ant-tooltip-arrow {
+  bottom: -5px;
+}
+.ant-tooltip-placement-right .ant-tooltip-arrow, .ant-tooltip-placement-rightBottom .ant-tooltip-arrow, .ant-tooltip-placement-rightTop .ant-tooltip-arrow {
+  left: -5px;
+}
+

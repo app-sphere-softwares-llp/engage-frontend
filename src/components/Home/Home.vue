@@ -1,6 +1,7 @@
 <!------------------------------->
 <!---- Main app After login ----->
 <!------------------------------->
+<!-- HTML content -->
 <template>
   <a-layout id="components-layout-demo-custom-trigger">
     <!-- templates/sidebar -->
@@ -12,12 +13,7 @@
     <a-layout>
 
       <!-- all child components will load here -->
-      <a-layout-content
-        :style="{
-          padding: '20px 0px',
-          minHeight: 'calc(100vh - 92px)'
-        }"
-      >
+      <a-layout-content class="content-section">
         <router-view />
       </a-layout-content>
     </a-layout>
@@ -25,8 +21,9 @@
   </a-layout>
 </template>
 
+<!-- JS content -->
 <script>
-import Sidebar from "../templates/Sidebar/Sidebar";
+import Sidebar from "../../templates/Sidebar/Sidebar";
 
 export default {
   data() {
@@ -39,3 +36,11 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+.content-section {
+    padding: 20px 0px;
+    height: calc(100vh - 0px);
+    overflow-y: auto;
+}
+</style>

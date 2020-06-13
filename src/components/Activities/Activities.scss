@@ -1,0 +1,40 @@
+@import "../../scss/variables";
+
+.summary-view-section {
+  padding: 25px 32px 38px 32px;
+
+  .summary-section {
+    margin-top: 38px;
+
+    .summary-box {
+      background: $brand-primary 0% 0% no-repeat padding-box;
+      box-shadow: 0px 1px 20px #0000000D;
+      border-radius: 10px;
+      height: 126px;
+    }
+    .graphics-box {
+      padding-top: 12px;
+    }
+  }
+}
+
+.table-design {
+  width:100%;
+  .day-row {
+    background: rgba($gray-light, 0.05);
+  }
+  tbody {
+    border-bottom: 16px solid $body-bg;
+  }
+  td {
+    background: $white;
+  }
+  th {
+    img {
+      margin-top: -4px;
+    }
+  }
+  th, td {
+    padding: 8px 32px 7px 32px;
+  }
+}

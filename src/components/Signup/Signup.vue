@@ -1,7 +1,9 @@
+<!-- CSS content -->
 <style lang="scss">
-  @import "./signup";
+  @import "Signup";
 </style>
 
+<!-- HTML content -->
 <template>
   <section id="signup-page">
     <a-row type="flex" justify="space-between" align="start">
@@ -191,7 +193,7 @@
   </section>
 </template>
 
-
+<!-- JS content -->
 <script>
   export default {
     data() {
